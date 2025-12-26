@@ -38,6 +38,8 @@
 - select `Module /  JRE System Library[]` then `Edit...`
 - under `Execution environment` select `jdk 17.0.12_7`
 
+- or try `Workspace default JRE(jdk17.0.14_7)`
+
 ##### Server setting
 - select `ClassPath` then `Add Library...`
 - Server Runtime / Next / 

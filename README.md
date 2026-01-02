@@ -1,77 +1,205 @@
-# Apache Tomcat Settings
+# Bulletin Board
+
+- JAVA 17
+- Oracle DB 11
+- Apache Tomcat 9
 
 ---
 
-#### Window / Preferences / General / Workspace
+## List of Contents
+
+- [1. Workspace Encoding](#1-workspace-encoding)
+- [2. JDK Configuration](#2-jdk-configuration)
+- [3. Apache Tomcat Runtime](#3-apache-tomcat-runtime)
+- [4. Perspective Customization](#4-perspective-customization)
+- [5. Project Properties](#5-project-properties)
+- [6. Server Settings](#6-server-settings)
+- [Cryptography](#cryptography)
+
+---
+
+## 1. Workspace Encoding
+
+### Workspace
+
+```bash
+Window > Preferences > General > Workspace
+```
+
 - text file encoding : `UTF-8`
 
-#### Window / Preferences / General / Editors / Text Editors / Spelling
+### Text Editor Spelling
+
+```bash
+ Window > Preferences > General > Editors > Text Editors > Spelling
+```
+
 - Encoding : `UTF-8`
 
-#### Window / Preferences / Web / CSS Files, HTML Files, JSP Files 
+### Web Files Encoding
+
+```bash
+Window > Preferences > Web > CSS Files
+Window > Preferences > Web > HTML Files
+Window > Preferences > Web > JSP Files
+```
+
 - Encoding : `UTF-8`
 
-#### Window / Preferences / Installed JREs / 
-- ##### check `jdk 17`
+---
 
-#### Window / Preferences / Server / Runtime Environment /
-- ##### click `add` then `apache`
-- ##### select `Tomcat v9.0 Server`
+## 2. JDK Configuration
 
-### Windows > Perspective > Customize Perspective
-- `Shortcuts` tab
+### Installed JREs
+
+```bash
+Window > Preferences > Installed JREs
+```
+
+- select `jdk17.x.x`
+
+### Java Compiler
+
+```bash
+Window > Preference > Java > Compiler
+```
+
+- `compiler compliance level:` `17`
+
+---
+
+## 3. Apache Tomcat Runtime
+
+### Add Tomcat Runtime
+
+```bash
+Window > Preferences > Server > Runtime Environment
+```
+
+1. Click `add`
+2. Select `apache`
+3. Select `Tomcat v9.0 Server`
+
+---
+
+## 4. Perspective Customization
+
+```bash
+Windows > Perspective > Customize Perspective
+```
+
+`Shortcuts` tab
+
 - select `java` from category
-- uncheck `Java Project from Existing Ant Build file`
-	
+  - uncheck `Java Project from Existing Ant Build file`
 - select `web` from category
-- uncheck `Static Web Project`
-	
-- ###### Apply and Close
+  - uncheck `Static Web Project`
 
 ---
 
-## Project properties
+## 5. Project properties
 
-### Java Build Path / select `Libraries` tab
+### Build Path
 
-##### JDK setting
-- select `Module /  JRE System Library[]` then `Edit...`
-- under `Execution environment` select `jdk 17.0.12_7`
+```bash
+Project > Properties > Java Build Path > Libraries
+```
 
-- or try `Workspace default JRE(jdk17.0.14_7)`
+#### Java Build Path
 
-##### Server setting
-- select `ClassPath` then `Add Library...`
-- Server Runtime / Next / 
-- check `Apache Tomcat v9.0`
+1. select `Module /  JRE System Library[]` then `Edit...`
+2. under `Execution environment` select `jdk 17.x.x` or try `Workspace default JRE(jdk17.x.x)`
 
-### Java Compiler / 
-- `compiler compliance level:` **17**
+#### Server setting
 
-### Project Facets / 
-- `Dynamic Web Module` to **4.0**
-- `Java` to **17**
-
-### Targeted Runtimes /
-- select `Apache Tomcat v9.0` 
-
-### Web Project Settings / 
-- context root:  `/`
+1. select `ClassPath` then `Add Library...`
+2. Server Runtime > Next
+3. check `Apache Tomcat v9.0`
 
 ---
 
-### Servers view / create a new server
-- Apache Tomcat
-  - select `Tomcat v9.0 Server`
-  - browse `Tomcat installation directory` 
+### Project Facets
 
-- double click `Tomcat v9.0 Server at localhost`
-  - under the `Port Name` set port number of `HTTP/1.1` to `80`
-  - under the `Sever Options` check `Serve modules without publishing`
+```bash
+Project > Properties > Project Facets
+```
 
-- right click  `Tomcat v9.0 Server at localhost`
-  - from `add and removes` double click the project you want to add or remove
+- `Dynamic Web Module` to `4.0`
+- `Java` to `17`
+
+### Targeted Runtimes
+
+```bash
+Project > Properties > Targeted Runtimes
+```
+
+- `Apache Tomcat v9.0`
+
+### Web Project Settings
+
+```bash
+Project > Properties > Web Project Settings
+```
+
+`context root`: `/`
 
 ---
 
-##### Happy Hacking
+## 6. Server Settings
+
+```bash
+Bottom right > Servers > New Server
+```
+
+### Add Apache Tomcat
+
+1. Select `Tomcat v9.0 Server`
+2. Browse `Tomcat installation directory`
+3. Select the tomcat installation directory
+
+### Configure Apache Server
+
+- Double click `Tomcat v9.0 Server at localhost`
+
+  - Under the `Port Name` set port number of `HTTP/1.1` to `80`
+  - Under the `Sever Options` check `Serve modules without publishing`
+
+- Right click `Tomcat v9.0 Server at localhost`
+  - From `add and removes` double click the project you want to add or remove
+
+---
+
+## Cryptography
+
+`Plaintext`: The original data entered by the user
+
+`Encryption`: The process of converting plaintext into encoded or unreadable data
+
+`Decryption`: The process of converting encrypted data back into readable plaintext
+
+---
+
+### Symmetric Key Encryption
+
+Encryption and decryption are performed using the `same key`
+
+### Asymmetric Key Encryption
+
+Uses a `public key` and a `private key`
+
+- Public key: used for encryption
+- Private key: used for decryption
+
+### One-Way Hash Function
+
+Converts plaintext into a `fixed-length hashed value`
+
+- Decryption is `not possible`
+- Common algorithms:
+  - `SHA-256`
+  - `SHA-512`
+  - `bcrypt` (considered more secure than SHA algorithms)
+
+---
+
+#### Happy Hacking 🎉

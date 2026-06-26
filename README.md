@@ -14,6 +14,7 @@
 - [4. Perspective Customization](#4-perspective-customization)
 - [5. Project Properties](#5-project-properties)
 - [6. Server Settings](#6-server-settings)
+- [Lombok](#lombok)
 - [Cryptography](#cryptography)
 
 ---
@@ -22,7 +23,7 @@
 
 ### Workspace
 
-```bash
+```sh
 Window > Preferences > General > Workspace
 ```
 
@@ -30,7 +31,7 @@ Window > Preferences > General > Workspace
 
 ### Text Editor Spelling
 
-```bash
+```sh
  Window > Preferences > General > Editors > Text Editors > Spelling
 ```
 
@@ -38,7 +39,7 @@ Window > Preferences > General > Workspace
 
 ### Web Files Encoding
 
-```bash
+```sh
 Window > Preferences > Web > CSS Files
 Window > Preferences > Web > HTML Files
 Window > Preferences > Web > JSP Files
@@ -52,15 +53,15 @@ Window > Preferences > Web > JSP Files
 
 ### Installed JREs
 
-```bash
-Window > Preferences > Installed JREs
+```sh
+Window > Preferences > Java > Installed JREs
 ```
 
 - select `jdk17.x.x`
 
 ### Java Compiler
 
-```bash
+```sh
 Window > Preference > Java > Compiler
 ```
 
@@ -72,7 +73,7 @@ Window > Preference > Java > Compiler
 
 ### Add Tomcat Runtime
 
-```bash
+```sh
 Window > Preferences > Server > Runtime Environment
 ```
 
@@ -84,7 +85,7 @@ Window > Preferences > Server > Runtime Environment
 
 ## 4. Perspective Customization
 
-```bash
+```sh
 Windows > Perspective > Customize Perspective
 ```
 
@@ -101,18 +102,18 @@ Windows > Perspective > Customize Perspective
 
 ### Build Path
 
-```bash
-Project > Properties > Java Build Path > Libraries
+```sh
+Project > Properties > Java Build Path
 ```
 
-#### Java Build Path
+#### Libraris
 
-1. select `Module /  JRE System Library[]` then `Edit...`
+1. select `Modulepath /  JRE System Library[]` then `Edit...`
 2. under `Execution environment` select `jdk 17.x.x` or try `Workspace default JRE(jdk17.x.x)`
 
 #### Server setting
 
-1. select `ClassPath` then `Add Library...`
+1. select `classpath` then `Add Library...`
 2. Server Runtime > Next
 3. check `Apache Tomcat v9.0`
 
@@ -120,7 +121,7 @@ Project > Properties > Java Build Path > Libraries
 
 ### Project Facets
 
-```bash
+```sh
 Project > Properties > Project Facets
 ```
 
@@ -129,7 +130,7 @@ Project > Properties > Project Facets
 
 ### Targeted Runtimes
 
-```bash
+```sh
 Project > Properties > Targeted Runtimes
 ```
 
@@ -137,7 +138,7 @@ Project > Properties > Targeted Runtimes
 
 ### Web Project Settings
 
-```bash
+```sh
 Project > Properties > Web Project Settings
 ```
 
@@ -147,8 +148,8 @@ Project > Properties > Web Project Settings
 
 ## 6. Server Settings
 
-```bash
-Bottom right > Servers > New Server
+```sh
+Bottom Left > Servers > New Server
 ```
 
 ### Add Apache Tomcat
@@ -166,6 +167,20 @@ Bottom right > Servers > New Server
 
 - Right click `Tomcat v9.0 Server at localhost`
   - From `add and removes` double click the project you want to add or remove
+
+---
+
+## Lombok
+
+1. Download [lombok](https://projectlombok.org/download) JAR file
+2. Move it to `C:\Users\{user-name}\eclipse\jee-20xx-xx\eclipse\`
+3. Double click the fie and install or open the dir with terminal and execute the following
+
+```sh
+java -jar lombok.jar
+```
+
+Restart the PC to take effect.
 
 ---
 

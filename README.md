@@ -32,7 +32,7 @@ Window > Preferences > General > Workspace
 ### Text Editor Spelling
 
 ```sh
- Window > Preferences > General > Editors > Text Editors > Spelling
+Window > Preferences > General > Editors > Text Editors > Spelling
 ```
 
 - Encoding : `UTF-8`
@@ -106,7 +106,7 @@ Windows > Perspective > Customize Perspective
 Project > Properties > Java Build Path
 ```
 
-#### Libraris
+#### Libraries
 
 1. select `Modulepath /  JRE System Library[]` then `Edit...`
 2. under `Execution environment` select `jdk 17.x.x` or try `Workspace default JRE(jdk17.x.x)`
@@ -174,7 +174,8 @@ Bottom Left > Servers > New Server
 
 1. Download [lombok](https://projectlombok.org/download) JAR file
 2. Move it to `C:\Users\{user-name}\eclipse\jee-20xx-xx\eclipse\`
-3. Double click the fie and install or open the dir with terminal and execute the following
+3. Double click the fie and install or open the dir with terminal and execute
+   the following
 
 ```sh
 java -jar lombok.jar

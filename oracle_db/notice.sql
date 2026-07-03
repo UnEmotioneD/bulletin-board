@@ -1,3 +1,6 @@
+-- user: notice
+-- pw: 1234
+
 drop table tbl_member cascade constraints;
 drop table tbl_notice_type cascade constraints;
 drop table tbl_notice cascade constraints;
@@ -35,8 +38,8 @@ comment on column tbl_member.enroll_date is '가입일';
 create sequence seq_member maxvalue 9999 cycle;
 
 -- 비밀번호 암호화 이후에는 insert 문으로 만들 계정은 로그인 할 수 없음
--- insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( seq_member.nextval, 4, '0'), 'admin999', 'admin999!', '관리자', 'admin@naver.com', '010-1234-1234', '서울 강남구', 1, sysdate );
--- insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( sqq_member.nextval, 4, '0'), 'daniel999', 'daniel999@', '김찬희', 'blackeagle10@icloud.com', '010-8645-5542', '경기도 용인시', 2, sysdate );
+-- insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( seq_member.nextval, 4, '0'), 'admin999', 'admin999!', '관리자', 'admin@naver.com', '010-0000-0000', '서울', 1, sysdate );
+-- insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( sqq_member.nextval, 4, '0'), 'daniel999', 'daniel999@', '대니엘', 'daniel@naver.com', '010-0000-0000', '부산', 2, sysdate );
 insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( seq_member.nextval, 4, '0'), 'user01', 'user1234!@#$', '유저1', 'user1@naver.com', '010-1234-1234', '서울 강남구', 3, sysdate );
 insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( seq_member.nextval, 4, '0'), 'user02', 'user2234!@#$', '유저2', 'user2@naver.com', '010-1234-1234', '서울 강남구', 3, sysdate );
 insert into tbl_member values ( to_char( sysdate, 'YYMMDD') || lpad( seq_member.nextval, 4, '0'), 'user03', 'user3234!@#$', '유저3', 'user3@naver.com', '010-1234-1234', '서울 강남구', 3, sysdate );

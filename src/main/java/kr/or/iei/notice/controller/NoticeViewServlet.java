@@ -31,7 +31,8 @@ public class NoticeViewServlet extends HttpServlet {
 	 *      response)
 	 */
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String noticeNo = request.getParameter("noticeNo");
 		String commentChk = request.getParameter("commentChk"); // 댓글 작성 후 상세보기 이동시 구분값
 
@@ -48,7 +49,8 @@ public class NoticeViewServlet extends HttpServlet {
 	 *      response)
 	 */
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 

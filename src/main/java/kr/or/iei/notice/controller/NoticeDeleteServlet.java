@@ -44,7 +44,7 @@ public class NoticeDeleteServlet extends HttpServlet {
 			String rootPath = request.getSession().getServletContext().getRealPath("/");
 
 			for (NoticeFile element : delList) {
-                //파일 업로드 날짜 == 삭제해야할 폴더명
+				// 파일 업로드 날짜 == 삭제해야할 폴더명
 				String uploadDate = element.getFilePath().substring(0, 8);
 				String delFilePath = rootPath + "resources/upload/" + uploadDate + "/" + element.getFilePath();
 

@@ -105,8 +105,7 @@ public class NoticeUpdateServlet extends HttpServlet {
 			for (NoticeFile element : delFileList) {
 				// 파일 업로드 날짜 == 삭제해야할 파일의 폴더명
 				String uploadDate = element.getFilePath().substring(0, 8);
-				String delFilePath = rootPath + "resources/upload/" + uploadDate + "/"
-						+ element.getFilePath();
+				String delFilePath = rootPath + "resources/upload/" + uploadDate + "/" + element.getFilePath();
 
 				File delFile = new File(delFilePath);
 

@@ -1,10 +1,6 @@
 # Bulletin Board
 
-- JAVA 17
-- Oracle DB 11
-- Apache Tomcat 9
-
----
+A full-stack `Java web application` to practice `CRUD` functionality.
 
 ## List of Contents
 
@@ -16,6 +12,7 @@
 - [6. Server Settings](#6-server-settings)
 - [Lombok](#lombok)
 - [Cryptography](#cryptography)
+- [Trouble Shooting](#trouble-shooting)
 
 ---
 
@@ -161,7 +158,6 @@ Bottom Left > Servers > New Server
 ### Configure Apache Server
 
 - Double click `Tomcat v9.0 Server at localhost`
-
   - Under the `Port Name` set port number of `HTTP/1.1` to `80`
   - Under the `Sever Options` check `Serve modules without publishing`
 
@@ -187,13 +183,9 @@ Restart the PC to take effect.
 
 ## Cryptography
 
-`Plaintext`: The original data entered by the user
-
-`Encryption`: The process of converting plaintext into encoded or unreadable data
-
-`Decryption`: The process of converting encrypted data back into readable plaintext
-
----
+- `Plaintext`: The original data entered by the user
+- `Encryption`: The process of converting plaintext into encoded or unreadable data
+- `Decryption`: The process of converting encrypted data back into readable plaintext
 
 ### Symmetric Key Encryption
 
@@ -218,4 +210,14 @@ Converts plaintext into a `fixed-length hashed value`
 
 ---
 
-#### Happy Hacking 🎉
+## Trouble Shooting
+
+![404 not found](./assets/404_not_found.png)
+
+- Project Properties > **Web Project Settings**
+  - **Context root**: `/`
+
+- Servers view > double click the server
+  - Change to **Modules** view from lower left
+    - Select the web module and **Edit...**
+      - **Path**: `/`

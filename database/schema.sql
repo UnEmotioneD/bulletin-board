@@ -1,4 +1,4 @@
--- user: notice
+-- user: bulletin_board
 -- pw: 1234
 
 drop table tbl_member cascade constraints;

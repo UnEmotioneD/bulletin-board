@@ -90,9 +90,9 @@ Window > Perspective > Customize Perspective
 `Shortcuts` tab
 
 - select `java` from category
-    - uncheck `Java Project from Existing Ant Build file`
+  - uncheck `Java Project from Existing Ant Build file`
 - select `web` from category
-    - uncheck `Static Web Project`
+  - uncheck `Static Web Project`
 
 ---
 
@@ -159,11 +159,11 @@ Bottom Left > Servers > New Server
 ### Configure Apache Server
 
 - Double click `Tomcat v9.0 Server at localhost`
-    - Under the **Port Name** set port number of **HTTP/1.1** to `80`
-    - Under the **Sever Options** check `Serve modules without publishing`
+  - Under the **Port Name** set port number of **HTTP/1.1** to `80`
+  - Under the **Sever Options** check `Serve modules without publishing`
 
 - Right click `Tomcat v9.0 Server at localhost`
-    - From `add and removes` double-click the project you want to add or remove
+  - From `add and removes` double-click the project you want to add or remove
 
 ---
 
@@ -205,9 +205,9 @@ Converts plaintext into a `fixed-length hashed value`
 
 - Decryption is `not possible`
 - Common algorithms:
-    - `SHA-256`
-    - `SHA-512`
-    - `bcrypt` (adaptive password hashing algorithm)
+  - `SHA-256`
+  - `SHA-512`
+  - `bcrypt` (adaptive password hashing algorithm)
 
 ---
 
@@ -216,18 +216,19 @@ Converts plaintext into a `fixed-length hashed value`
 ![404 not found](./assets/404_not_found.png)
 
 - Project Properties > **Web Project Settings**
-    - **Context root**: `/`
+  - **Context root**: `/`
 
 - Servers view > double-click the server
-    - Change to **Modules** view from lower left
-        - Select the web module and **Edit...**
-            - **Path**: `/`
+  - Change to **Modules** view from lower left
+    - Select the web module and **Edit...**
+      - **Path**: `/`
 
 ---
 
 ## Open with [IntelliJ](https://www.jetbrains.com/idea/download/?section=windows)
 
-> NOTE
+> **NOTE**
+>
 > Select the actual project folder when opening, not parent folder of projects like in `Eclipse IDE`.
 
 1. From right-sidebar click `Configure` at **Frameworks detected**.
@@ -245,12 +246,12 @@ For **Lombok** support select `Enable annotation processing` from the notificati
 Menubar > File > `Project structure...`(**Ctrl + Alt + Shift + S**)
 
 - Project
-    - **SDK**: `corretto-17`
-    - **Language level**: `SDK default`
+  - **SDK**: `corretto-17`
+  - **Language level**: `SDK default`
 
 - Modules
-    - **Dependencies** tab
-        - **Module SDK**: From **Project SDK** to `corretto-17` explicitly
+  - **Dependencies** tab
+    - **Module SDK**: From **Project SDK** to `corretto-17` explicitly
 
 If IDE is not picking up the dependencies...
 
@@ -294,8 +295,9 @@ If IDE is not picking up the dependencies...
 
 #### **_Now you're finally go to go!_**
 
-> TIP
-> From right-sidebar you can add **Data Source** and use IntelliJ as **_SQL Developer_**.
+> **TIP**
+>
+> Add a **Data Source** from the right sidebar to use IntelliJ just like `SQL Developer`.
 
 ### Git Ignore
 

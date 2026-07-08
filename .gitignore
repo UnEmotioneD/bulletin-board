@@ -1,3 +1,11 @@
+.idea/
+classes/
+*.iml
+
+.vscode/
+
 .settings/
 bin/
-build/
+
+.DS_Store
+.localized

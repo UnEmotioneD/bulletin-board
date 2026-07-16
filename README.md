@@ -227,8 +227,7 @@ Converts plaintext into a `fixed-length hashed value`
 
 ## Open with [IntelliJ](https://www.jetbrains.com/idea/download/?section=windows)
 
-> **NOTE**
->
+> [!IMPORTANT]
 > Select the actual project folder when opening, not parent folder of projects like in `Eclipse IDE`.
 
 1. From right-sidebar click `Configure` at **Frameworks detected**.
@@ -295,8 +294,7 @@ If IDE is not picking up the dependencies...
 
 #### **_Now you're finally go to go!_**
 
-> **TIP**
->
+> [!TIP]
 > Add a **Data Source** from the right sidebar to use IntelliJ just like `SQL Developer`.
 
 ### Git Ignore

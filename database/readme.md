@@ -1,9 +1,9 @@
 # Database
 
-[Oracle Database 11G Express Edition](https://www.oracle.com/database/technologies/xe-prior-release-downloads.htm)
+[Oracle Database 11G Express Edition](https://www.oracle.com/database/technologies/xe-prior-release-downloads.html)
 
-- User name: `bulletin_board`
-- Password: `1234`
+- **User**: `bulletin_board`
+- **Password**: `1234`
 
 ---
 
@@ -19,5 +19,5 @@ CREATE USER BULLETIN_BOARD IDENTIFIED BY 1234;
 GRANT CONNECT, RESOURCE TO BULLETIN_BOARD;
 ```
 
-> NOTE
-> Execute commands one by one;
+> [!IMPORTANT]
+> Enter and execute commands one by one.
